@@ -9,6 +9,7 @@ import javax.persistence.*;
 @Table
 public class Country {
     @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     @Column
     private String name;
